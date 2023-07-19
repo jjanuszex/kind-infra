@@ -1,0 +1,2 @@
+# kind-infra
+for gitops
