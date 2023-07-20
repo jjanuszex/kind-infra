@@ -16,8 +16,4 @@ spec:
     defaultRules:
       create: false
     targerNamespace: monitoring
-    service:
-      port: 3000
-      type: NodePort
-      targetPort: 30184
   interval: 1m
