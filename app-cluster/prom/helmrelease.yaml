@@ -12,4 +12,7 @@ spec:
         kind: HelmRepository
         name: prometheus-community
         namespace: flux-system
-
+  values:
+    defaultRules:
+      create: false
+    targerNamespace: monitoring
