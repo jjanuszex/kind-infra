@@ -1,0 +1,22 @@
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
+kind: Kustomization
+metadata:
+  name: realtimeapp-dev
+  namespace: flux-system
+spec:
+  healthChecks:
+  - kind: Deployment
+    name: realtime-dev
+    namespace: realtime-dev
+  - kind: Deployment
+    name: redis-dev
+    namespace: realtime-dev
+  interval: 1m0s
+  path: ./deploy/overlays/dev
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: realtimeapp-infra
+  timeout: 2m0s
+  validation: client
