@@ -13,7 +13,7 @@ spec:
     name: redis-prd
     namespace: realtime-prd
   interval: 1m0s
-  path: ./deploy/overlays/prd
+  path: ./deploy/overlays/prod
   prune: true
   sourceRef:
     kind: GitRepository
