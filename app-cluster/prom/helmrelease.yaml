@@ -16,3 +16,4 @@ spec:
     defaultRules:
       create: false
     targerNamespace: monitoring
+  interval: 1m
