@@ -1,0 +1,15 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: kibana-ext
+  namespace: logging
+spec:
+  selector:
+    common.k8s.elastic.co/type: kibana
+    kibana.k8s.elastic.co/name: kibana
+  ports:
+  - protocol: TCP
+    name: kibana-kb-http
+    port: 5601
+    nodePort: 30184
+  type: NodePort
