@@ -9,9 +9,9 @@ spec:
   - name: masters
     count: 1
     config:
-      node.store.allow_mmap: false
       node.roles: ["master"]
       xpack.ml.enabled: true
+      node.remote_cluster_client: false
   - name: data
     count: 2
     config:
