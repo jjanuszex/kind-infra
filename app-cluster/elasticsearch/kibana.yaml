@@ -4,16 +4,7 @@ metadata:
   name: kibana
   namespace: logging
 spec:
-  version: 7.17.3
+  version: 8.8.2
   count: 1
   elasticsearchRef:
-    name: elasticsearch
-  http:
-    service:
-      spec:
-        type: ClusterIP
-    tls:
-      selfSignedCertificate:
-        disabled: true
-  config:
-    server.maxPayloadBytes: 500mb
+    name: quickstart
