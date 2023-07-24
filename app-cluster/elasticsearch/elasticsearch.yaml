@@ -4,7 +4,7 @@ metadata:
   name: elasticsearch
   namespace: logging
 spec:
-  version: 7.17.3
+  version: 8.8.2
   nodeSets:
   - name: master
     count: 1
